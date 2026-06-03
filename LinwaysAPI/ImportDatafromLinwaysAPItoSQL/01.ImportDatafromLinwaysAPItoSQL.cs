@@ -7,23 +7,30 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Configuration;
 
 class Program
 {
-    static string connectionString =
-        "Server=SAPSERVER-1;" +
-        "Database=RevaIncomingPayment;" +
-        "User Id=sa;" +
-        "Password=Welcome1#;" +
-        "TrustServerCertificate=True;";
+    static readonly string connectionString =
+     ConfigurationManager.AppSettings["ConnectionString"];
 
-    static string baseUrl =
-        "http://admv4qa.linways.com/lin-api/v1/fee/reports/studentwise-account-fee-report-by-receipt";
+    static readonly string baseUrl =
+        ConfigurationManager.AppSettings["BaseUrl"];
 
-    static string apiUserName = "staff39";
-    static string apiPassword = "1234";
-    static string apiKey = "3tEhT9sc8W";
-    static string apiSecretKey = "ANFmiPHqpce43tEDd";
+    static readonly string apiUserName =
+        ConfigurationManager.AppSettings["ApiUserName"];
+
+    static readonly string apiPassword =
+        ConfigurationManager.AppSettings["ApiPassword"];
+
+    static readonly string apiKey =
+        ConfigurationManager.AppSettings["ApiKey"];
+
+    static readonly string apiSecretKey =
+        ConfigurationManager.AppSettings["ApiSecretKey"];
+
+    static readonly string defaultStartDate =
+        ConfigurationManager.AppSettings["DefaultStartDate"];
     static string[] paymentMethods =
  {
     "CASH",
