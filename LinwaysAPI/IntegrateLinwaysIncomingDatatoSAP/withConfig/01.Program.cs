@@ -8,20 +8,31 @@ using System.Configuration;
 class Program
 {
     static string sqlConnectionString =
-        "Server=SAPSERVER-1;" +
-        "Database=RevaIncomingPayment;" +
-        "User Id=sa;" +
-        "Password=Welcome1#;" +
-        "TrustServerCertificate=True;";
-    static string sapServer = ConfigurationManager.AppSettings["SapServer"];
-    static string sapCompanyDB = ConfigurationManager.AppSettings["SapCompanyDB"];
-    static string sapUserName = ConfigurationManager.AppSettings["SapUserName"];
-    static string sapPassword = ConfigurationManager.AppSettings["SapPassword"];
-    static string dbUserName = ConfigurationManager.AppSettings["DbUserName"];
-    static string dbPassword = ConfigurationManager.AppSettings["DbPassword"];
+        ConfigurationManager.AppSettings["SqlConnectionString"];
 
-    static string paymentAccount = ConfigurationManager.AppSettings["CashAccount"];
-    static string TransAccount = ConfigurationManager.AppSettings["TransferAccount"];
+    static string sapServer =
+        ConfigurationManager.AppSettings["SapServer"];
+
+    static string sapCompanyDB =
+        ConfigurationManager.AppSettings["SapCompanyDB"];
+
+    static string sapUserName =
+        ConfigurationManager.AppSettings["SapUserName"];
+
+    static string sapPassword =
+        ConfigurationManager.AppSettings["SapPassword"];
+
+    static string dbUserName =
+        ConfigurationManager.AppSettings["DbUserName"];
+
+    static string dbPassword =
+        ConfigurationManager.AppSettings["DbPassword"];
+
+    static string paymentAccount =
+        ConfigurationManager.AppSettings["CashAccount"];
+
+    static string TransAccount =
+        ConfigurationManager.AppSettings["TransferAccount"];
 
 
     static void Main()
