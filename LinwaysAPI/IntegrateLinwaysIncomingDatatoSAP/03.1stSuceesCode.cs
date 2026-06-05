@@ -20,7 +20,9 @@ class Program
     static string dbUserName = "sa";
     static string dbPassword = "Welcome1#";
 
-    static string paymentAccount = "12090101";
+    static string paymentAccount = "12090101"; 
+    static string TransAccount = "12100209";
+
 
     static void Main()
     {
@@ -273,7 +275,7 @@ AND Canceled = 'N'";
             }
             else
             {
-                payment.TransferAccount = "12100209";
+                payment.TransferAccount = TransAccount;
                 payment.TransferSum = Convert.ToDouble(receipt.TotalAmount);
                 payment.TransferDate = receipt.ReceiptDate;
                 payment.TransferReference = receipt.ReceiptNo;
