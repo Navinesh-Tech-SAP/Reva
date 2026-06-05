@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="SapServer" value="SAPSERVER-1"/>
+    <add key="SapCompanyDB" value="Z_TEST_04052026"/>
+    <add key="SapUserName" value="manager"/>
+    <add key="SapPassword" value="Cbs@2023"/>
+    <add key="DbUserName" value="sa"/>
+    <add key="DbPassword" value="Welcome1#"/>
+    <add key="CashAccount" value="12090101"/>
+    <add key="TransferAccount" value="12100209"/>
+  </appSettings>
+</configuration>
