@@ -54,7 +54,7 @@ namespace CloseOPRQ_Reva
 
 
                 string excelPath =
-                    @"D:\Navinesh\VS_Application\CloseGRPO_Reva\Excel\CancelOPRQ.xlsx";
+                    @"D:\Navinesh\VS_Application\CloseGRPO_Reva\Excel\CloseOPRQ.xlsx";
 
 
                 List<OprqRow> oprqRows = ReadExcelColumnA(excelPath);
